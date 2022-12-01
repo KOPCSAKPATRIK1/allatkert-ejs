@@ -4,9 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Állat adatai</title>
 </head>
 <body>
-    
+    <form method="post">
+        <p>
+            <label>
+                    Név: <br>
+                    <input name="name" id="name" type="text">
+            </label>
+            <label id="namehiba" style="color: red; display: none;">Név nem lehet üres</label>
+        </p>
+        <p>
+            <label>
+                    Életkor: <br>
+                    <input name="age" id="age" type="number">
+            </label>
+            <label id="agehiba" style="color: red; display: none;">Életkor nem lehet üres vagy nullánál kisebb</label>
+        </p>
+        <p>
+            <label>
+                    Fajta: <br>
+                   <select name="type" id="type">
+                    <option value="Frog">Béka</option>
+                    <option value="Fish">Hal</option>
+                    <option value="Monkey">Majomxd</option>
+                   </select>
+            </label>
+        </p>
+        <p>
+            <input type="submit" id="submit" value="Kész">
+        </p>    
+    </form>
+
+    <script src="/validation.js"></script>
 </body>
 </html>
